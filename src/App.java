@@ -2,6 +2,7 @@
 import dequeEstrutura.DequeEncadeado;
 import dequeEstrutura.DequeLinear;
 import filaEstrutura.FilaCircular;
+import filaEstrutura.FilaCircularEncadeada;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -78,6 +79,28 @@ public class App {
         System.out.println("Removido foi: " +filazinha.desenfileirar());
         System.out.println("Removido foi: " +filazinha.desenfileirar());
         filazinha.imprimir();
+
+        System.out.println("\n");
+        FilaCircularEncadeada filaCircularEncadeada = new FilaCircularEncadeada();
+        System.out.println("----------------------------------------------");
+        System.out.println("Fila Circular Encadeada");
+        System.out.println("----------------------------------------------");
+        System.out.println("Add dados");
+        System.out.println("----------------------------------------------");
+        filaCircularEncadeada.enfileirar("A");
+        filaCircularEncadeada.imprime();
+        System.out.println("----------------------------------------------");
+        filaCircularEncadeada.enfileirar("B");
+        filaCircularEncadeada.imprime();
+        System.out.println("----------------------------------------------");
+        filaCircularEncadeada.enfileirar("C");
+        filaCircularEncadeada.imprime();
+
+        System.out.println("----------------------------------------------");
+        System.out.println("Removido foi: " +filaCircularEncadeada.desenfileirar());
+        System.out.println("Removido foi: " +filaCircularEncadeada.desenfileirar());
+        System.out.println("----------------------------------------------");
+        filaCircularEncadeada.imprime();
 
     }
 }
